@@ -1,3 +1,3 @@
 class Kitten < ApplicationRecord
-  validates :name, presence: true
+  validates :name, :age, :cuteness, :softness, presence: true
 end

@@ -2,8 +2,8 @@
   <%= f.label :name %>
   <%= f.text_field :name, placeholder: "A cute name" %>
 
-  <%= f.label :age %>
-  <%= f.range_field :age, in: 1..12, step: 1 %>
+  <%= f.label :age, "Age in Months" %>
+  <%= f.number_field :age, in: 1..12%>
 
   <%= f.label :cutness %>
   <%= f.range_field :cuteness, in: 1..10, step: 1 %>
