@@ -3,9 +3,17 @@ class KittensController < ApplicationController
 
   def index
     @kittens = Kitten.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @kittens }
+    end
   end
 
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @kitten }
+    end
   end
 
   def new
@@ -50,5 +58,4 @@ class KittensController < ApplicationController
   def kitten_params
     params.require(:kitten).permit(:name, :age, :cuteness, :softness)
   end
-
 end

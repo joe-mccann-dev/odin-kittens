@@ -1,3 +1,5 @@
 <%= render 'kitten_info' %>
 
+<%= link_to "home", root_url %>
+<%= link_to "edit", edit_kitten_path(@kitten) %>
 <%= link_to "delete", @kitten, method: :delete, data: { confirm: "Are you sure?" } %>

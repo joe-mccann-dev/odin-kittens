@@ -1,6 +1,6 @@
 
 <ol>
   <% @kittens.each do |kitten| %>
-    <li><%= link_to kitten.name, kitten %></li>
+    <li><%= link_to kitten.name, kitten %> | <%= link_to "delete", kitten, method: :delete %></li>
   <% end %>
 </ol>
