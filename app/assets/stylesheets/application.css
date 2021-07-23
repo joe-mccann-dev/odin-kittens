@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.success {
+  background: green;
+}
+
+.warning {
+  background: red;
+}
+
+.success, .warning {
+  margin-left: 10px;
+  width: 500px;
+  color: white;
+}
